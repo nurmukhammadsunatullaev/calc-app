@@ -1,0 +1,63 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <div class="header__left">
+      <img src="assets/full.png" />
+      <!-- <img src="assets/USAID.png" />
+      <img src="assets/Gerb.png" />
+      <img src="assets/UNDP.png" />
+      <img src="assets/E-sud.png" /> -->
+      <span class="header__title">ФУҚАРОЛИК ИШЛАРИ БЎЙИЧА СУДЛАРГА МУРОЖААТ ЭТИШ УЧУН ТЎЛАНАДИГАН ДАВЛАТ БОЖИНИ ҲИСОБЛАШ ОНЛАЙН КАЛЬКУЛЯТОРИ</span>
+      </div>
+    <span class="example-spacer"></span>
+    <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+      <img style="height: 20px; width: 60px" src="assets/uz.svg"/>
+    </button>
+    <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+      <img style="height: 20px; width: 60px" src="assets/ru.svg"/>
+    </button>
+    <span class="header__right">Центр технической поддержки
+      (+998) 71 239 02 34, 239 02 52</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<div class="main-container">
+  <div class="row">
+    <div class="col-6">
+      <div class="card-inline" (click)="openDialog()">
+        <div class="card-inline__left">
+          <img src="assets/Bino.png" />
+        </div>
+        <div class="card-inline__right">Суд первой инстанции</div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="card-inline" (click)="openDialog()">
+        <div class="card-inline__left">
+          <img src="assets/Tarozi.png" />
+        </div>
+        <div class="card-inline__right">Суд апелляционной инстанции</div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="card-inline" (click)="openDialog()">
+        <div class="card-inline__left">
+          <img src="assets/Bolga.png" />
+        </div>
+        <div class="card-inline__right">Суд кассационной инстанции</div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="card-inline" (click)="openDialog()">
+        <div class="card-inline__left">
+          <img src="assets/Kitob.png" />
+        </div>
+        <div class="card-inline__right">Выдача дубликатов судебных актов и копий иных документов</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  © 2004-2019 Верховный Суд Республики Узбекистан
+</div>
+

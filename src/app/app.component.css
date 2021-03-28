@@ -1,0 +1,101 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.mat-toolbar {
+  background: #f5f5f5;
+  color: rgba(0,0,0,.87);
+  box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+
+.img{
+  border-style: none;
+}
+
+.header__left {
+  white-space: initial;
+  height: 100%;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.header__left img {
+  height: 80px;
+  margin-right: 10px;
+}
+
+.header__left .header__title {
+  width: 520px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: normal;
+}
+
+.header__right {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+  width: 200px;
+  white-space: initial;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.card-inline {
+  display: flex;
+  align-items: center;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777;
+  background-color: #f5f5f5;
+  margin-bottom: 30px;
+  cursor: pointer;
+  padding: 25px;
+  transition: border 0.3s;
+}
+
+.card-inline:hover {
+  border-left: 5px solid #2196f3;
+}
+
+.card-inline img {
+  height: 40px;
+  padding: 10px;
+
+}
+
+ .card-inline__left {
+  border: 1px solid;
+  border-radius: 50%;
+  margin-right: 25px;
+ }
+
+.card-inline .card-inline__right {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.main-container {
+  padding: 0 150px;
+  display: flex;
+  align-items: center;
+  height: calc(100% - 120px);
+}
+
+.col-6 {
+  width: calc(50% - 20px);
+  padding: 0 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+}

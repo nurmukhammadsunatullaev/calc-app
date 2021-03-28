@@ -1,0 +1,22 @@
+<h1 mat-dialog-title>Title</h1>
+
+<mat-form-field class="w-100">
+  <mat-label>Type of</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let type of types" [value]="type">
+      {{type}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field class="w-100">
+  <mat-label>Price</mat-label>
+  <input matInput placeholder="Number" type="number" />
+</mat-form-field>
+
+<button class="w-100" mat-raised-button>Calculate</button>
+
+<mat-divider></mat-divider>
+
+
+<mat-label>Result: </mat-label>
