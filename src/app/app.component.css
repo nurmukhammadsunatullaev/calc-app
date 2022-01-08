@@ -99,3 +99,26 @@
   padding: 15px;
   width: 100%;
 }
+
+.title {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 10px 10px 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.title:after {
+  content: '';
+  display: block;
+  border-radius: 4px;
+  width: 4em;
+  height: .1em;
+  min-height: 1px;
+  min-width: 16px;
+  max-height: 4px;
+  max-width: 120px;
+  margin-top: 16px;
+  margin-left: calc(50% - 2em);
+  background: #2196f3;
+}

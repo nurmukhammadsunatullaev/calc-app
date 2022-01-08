@@ -1,22 +1,22 @@
-<h1 mat-dialog-title>Title</h1>
+<h1 mat-dialog-title>Давлат божи калькулятори</h1>
 
 <mat-form-field class="w-100">
-  <mat-label>Type of</mat-label>
-  <mat-select>
+  <mat-label>Иш тоифаси</mat-label>
+  <mat-select [(value)]=selectedType >
     <mat-option *ngFor="let type of types" [value]="type">
-      {{type}}
+      {{type.typeName}}
     </mat-option>
   </mat-select>
 </mat-form-field>
 
 <mat-form-field class="w-100">
-  <mat-label>Price</mat-label>
-  <input matInput placeholder="Number" type="number" />
+  <mat-label>Бахоси</mat-label>
+  <input #priceBox matInput placeholder="Микдор" type="number" />
 </mat-form-field>
 
-<button class="w-100" mat-raised-button>Calculate</button>
+<button class="w-100" mat-raised-button (click)="calculate(priceBox)">Хисоблаш</button>
 
 <mat-divider></mat-divider>
 
 
-<mat-label>Result: </mat-label>
+<mat-label>Давлат божи микдори: {{result}}</mat-label>
